@@ -25,7 +25,7 @@ def main():
 	choice=np.random.choice(range(len(kins)))
 	chosen_kin=kins[choice]
 	df=pd.DataFrame(chosen_kin, columns=['tiempo (m)', 'concentración'])
-	return df
+	return df,choice
 
 
 if __name__ == '__main__':
