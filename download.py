@@ -7,5 +7,5 @@ def get_table_download_link(df,i):
     """
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
-    href = f'<a href="data:file/csv;base64,{b64}" download="practica{np.random.randint(1,1333333)}{i}.csv">Descargar archivo</a>'
+    href = f'<a href="data:file/csv;base64,{b64}" download="practica{np.random.randint(1,1333333)}{i}.csv"><b>Descargar archivo</b></a>'
     return href
